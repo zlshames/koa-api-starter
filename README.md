@@ -3,13 +3,13 @@
 
 ### Features
 * ES7 async/await
-* Koa 2 (HTTP Middleware
-    * Koa Router
+* Koa 2 (HTTP Middleware) - http://koajs.com/
+    * Koa Router - https://github.com/alexmingoia/koa-router/tree/master/
     * Koa Bodyparser
-* BookshelfJS with Knex (SQL ORM)
+* BookshelfJS with Knex (SQL ORM) - http://bookshelfjs.org/ and http://knexjs.org/
     * Migrations
     * Models
-* Indicative Validation
+* Indicative Validation - http://indicative.adonisjs.com/
 * JWT Authentication
 
 ### Initial Setup
