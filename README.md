@@ -1,5 +1,5 @@
-# Koa API Starter
-###### A starter API server built on Koa 2 and BookshelfJS (SQL ORM)
+# Koa API Starter Kit
+###### A starter/boilerplate API server built on Koa 2 and BookshelfJS (SQL ORM)
 
 ### Features
 * ES7 async/await
