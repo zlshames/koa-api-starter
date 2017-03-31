@@ -5,27 +5,15 @@ class Profile extends Bookshelf.Model {
   get uuid() { return true }
   get hasTimestamps() { return false }
 
-  user() {
-    return this.belongsTo('User')
-  }
-
-  /**
-   * Returns the rules for validation
-   * @param required - If the fields should be required
-   */
-  static getRules(required = false) {
-    let rules = {
+  static get rules() {
+    return {
       first_name: 'alpha|min:2|max:20',
       last_name: 'alpha|min:2|max:20'
     }
+  }
 
-    if (required) {
-      for (let key of Object.keys(rules)) {
-        rules[key] = 'required|' + rules[key]
-      }
-    }
-
-    return rules
+  user() {
+    return this.belongsTo('User')
   }
 
   /**

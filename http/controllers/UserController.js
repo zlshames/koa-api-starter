@@ -22,7 +22,11 @@ export default class UserController {
     const userInfo = ctx.request.body
 
     // Validate user info
-    await indicative.validateAll(userInfo, User.getRules(true))
+    await User.validate({
+      rules: User.rules,
+      fields: userInfo,
+      required: 'all'
+    })
 
     // Create user
     const user = await User.create(userInfo)
@@ -64,7 +68,11 @@ export default class UserController {
     }
 
     // Validate user info
-    await indicative.validateAll(userInfo, User.getRules())
+    // Validate user info
+    await User.validate({
+      rules: User.rules,
+      fields: userInfo
+    })
 
     // Find user by ID
     const user = await User.find(userId)

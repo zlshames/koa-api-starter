@@ -19,6 +19,7 @@ const Bookshelf = require('bookshelf')(knex);
 // Plugins
 Bookshelf.plugin(require('bookshelf-uuid'))
 Bookshelf.plugin(require('bookshelf-cascade-delete'))
+Bookshelf.plugin(require('./plugins/bookshelf-validation'))
 Bookshelf.plugin('registry')
 
 export default Bookshelf
