@@ -18,7 +18,7 @@
     "koa": "^2.1.0",
     "koa-bodyparser": "^4.1.0",
     "koa-router": "^7.0.1",
-    "pg": "^6.1.2"
+    "pg": "^6.4.2"
   },
   "scripts": {
     "server": "nodemon --watch http --exec babel-node -- http/server.js",
