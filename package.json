@@ -18,10 +18,14 @@
     "koa": "^2.1.0",
     "koa-bodyparser": "^4.1.0",
     "koa-router": "^7.0.1",
-    "pg": "^6.1.2"
+    "pg": "^6.1.2",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "server": "nodemon --watch http --exec babel-node -- http/server.js",
-    "server:prod": "babel-node http/server.js"
-  }
+    "server:prod": "babel-node http/server.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
